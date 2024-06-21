@@ -1,3 +1,6 @@
+/* {"Palette":["#3d2b1f","#5e2f2f","#d97a6d","#e4c7b8","#f9d3c8"],
+"Fonts":{"HeadingFont":"Bitter ExtraBold","SubheadingFont":"Bitter SemiBold","BodyFont":"Bitter"},"BrandVoice":"profesional, yet approachable"} */
+
 /* Apply a more comprehensive reset to remove default browser styles */
 *,
 *::before,
@@ -115,4 +118,88 @@ pre {
 /* Improve focus visibility for keyboard navigation */
 :focus-visible {
     outline: 2px solid blue;
+}
+
+/* Colors */
+:root {
+    /* Adjusted colors for better contrast */
+    --white-smoke: #f4f5f2ff;
+    --tan: #B3895Dff; /* Darkened from #CCB093ff */
+    --liver: #6b4e48ff;
+    --dutch-white: #E9D5B6ff;
+    --davys-gray: #565656ff;
+  }
+  
+  /* Example usage */
+  
+  body {
+    background-color: var(--white-smoke);
+    color: var(--davys-gray);
+  }
+  
+  h1, h2, h3 {
+    color: var(--liver);
+  }
+  
+  button.primary {
+    background-color: var(--tan);
+    color: #fff;
+  }
+  
+  button.secondary {
+    background-color: var(--dutch-white);
+    color: var(--davys-gray);
+  }
+  
+  .header {
+    background-color: var(--liver);
+    color: var(--white-smoke);
+  }
+  
+  .navbar {
+    background-color: var(--tan);
+    color: var(--white-smoke);
+  }
+  
+  .footer {
+    background-color: var(--davys-gray);
+    color: var(--white-smoke);
+  }
+  
+  .highlight {
+    color: var(--tan);
+  }  
+
+/* Customize Page Layout */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.sidebar{
+    grid-column: 1 / 2;
+    color: #fff;
+    background-color: var(--liver);
+    padding: 1rem;
+}
+
+.main{
+    grid-column: 2 / 5;
+    padding: 1rem;
+}
+
+/* Style buttons */
+.btn {
+  /*background-color: DodgerBlue;  Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: var(--dutch-white);
 }
