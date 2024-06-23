@@ -135,6 +135,7 @@ pre {
   body {
     background-color: var(--white-smoke);
     color: var(--davys-gray);
+    /* overflow: hidden; */
   }
   
   h1, h2, h3 {
@@ -152,8 +153,10 @@ pre {
   }
   
   .header {
-    background-color: var(--liver);
-    color: var(--white-smoke);
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .navbar {
@@ -166,40 +169,86 @@ pre {
     color: var(--white-smoke);
   }
   
-  .highlight {
+  /* .highlight {
     color: var(--tan);
-  }  
+  }   */
 
 /* Customize Page Layout */
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 .sidebar{
-    grid-column: 1 / 2;
     color: #fff;
     background-color: var(--liver);
     padding: 1rem;
 }
 
+.menu {
+  padding: 1rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  padding: .8rem;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.spacer {
+  /* height: 1px; */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  margin: 1rem 0;
+}
+
 .main{
-    grid-column: 2 / 5;
-    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: var(--white-smoke);
+}
+
+.projects{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project{
+    background-color: #fff;
+    padding: 2rem;
+    border-left: 0.8rem solid var(--tan);
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.trending{
+    display: grid;
+    gap: 2rem;
 }
 
 /* Style buttons */
 .btn {
   /*background-color: DodgerBlue;  Blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none; /* Remove borders */
-  color: white; /* White text */
+  /* color: white; White text */
   padding: 12px 16px; /* Some padding */
-  font-size: 16px; /* Set a font size */
+  font-size: 1rem; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
+.btn:hover{
   color: var(--dutch-white);
 }
+
+.btn:hover svg {
+  fill: var(--dutch-white);
+}
+
