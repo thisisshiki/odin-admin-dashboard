@@ -41,37 +41,45 @@
         <main class="main">
 
                 <header class="header">
-                    <div class="Search">
-                        <span class="material-icons">
-                            search
-                        </span>
-                        <input type="text" placeholder="Search">
-                        <!-- <button>Search</button> -->
+                    
+                    <div class="search">
+                        <form action="">
+                            <button class="btn" type="submit">
+                                <span class="material-icons">search</span>
+                            </button>
+                            <input type="text" placeholder="Search..." name="search">
+                        </form>
                     </div>
-                    <span class="material-icons">
-                        notifications
-                    </span>
+
                     <div class="profile">
+                        <span class="material-icons">
+                            notifications
+                        </span>
                         <img src="https://via.placeholder.com/24" alt="profile">
-                        <h3>John Doe</h3>
-                    </div>
-                    <div class="greeting">
-                        <img src="https://via.placeholder.com/50" alt="profile">
-                        <h5>Hi there,</h5>
-                        <h3>John Doe (@John)</h3>
-                    </div>
-                    <div class="btns">
-                        <button>New</button>
-                        <button>Upload</button>
-                        <button>Share</button>
+                        <h6>John Doe</h6>
                     </div>
                 </header>
 
+                <div class="greeting">
+                    <div class="greeting-info">
+                        <img src="https://via.placeholder.com/50" alt="profile">
+                        <div class="greeting-text">
+                            <p>Hi there,</p>
+                            <h6>John Doe (@John)</h6>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="text-btn">New</button>
+                        <button class="text-btn">Upload</button>
+                        <button class="text-btn">Share</button>
+                    </div>
+                </div>
+
                 <section class="projects">
-                    <h2>Your Projects</h2>
+                    <h5>Your Projects</h5>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -84,7 +92,7 @@
                     </div>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -97,7 +105,7 @@
                     </div>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -110,7 +118,7 @@
                     </div>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -123,7 +131,7 @@
                     </div>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -136,7 +144,7 @@
                     </div>
                     <div class="project">
                         <div class="project-header">
-                            <h3>Project 1</h3>
+                            <h5>Project 1</h5>
                         </div>
                         <div class="project-description">
                                 <p>Project content description</p>
@@ -150,9 +158,10 @@
                 </section>
 
                 <section class="Announcements">
+                    <h5>Announcements</h5>
                     <div class="Announcement">
                         <div class="Announcement-header">
-                            <h3>Announcement 1</h3>
+                            <h5>Announcement 1</h5>
                         </div>
                         <div class="Announcement-description">
                                 <p>Announcement content description</p>
@@ -160,7 +169,7 @@
                     </div>
                     <div class="Announcement">
                         <div class="Announcement-header">
-                            <h3>Announcement 1</h3>
+                            <h5>Announcement 1</h5>
                         </div>
                         <div class="Announcement-description">
                                 <p>Announcement content description</p>
@@ -168,7 +177,7 @@
                     </div>
                     <div class="Announcement">
                         <div class="Announcement-header">
-                            <h3>Announcement 1</h3>
+                            <h5>Announcement 1</h5>
                         </div>
                         <div class="Announcement-description">
                                 <p>Announcement content description</p>
@@ -178,9 +187,26 @@
                 </section>
 
                 <section class="trendinng">
-                    <div class="trendinng-user">
-
-                     
+                    <h5>Trendinng</h5>
+                    <div class="trending-user">
+                        <img src="https://via.placeholder.com/24" alt="profile">
+                        <a href="#">@John Doe</a>
+                        <p>user description</p>
+                    </div>
+                    <div class="trending-user">
+                        <img src="https://via.placeholder.com/24" alt="profile">
+                        <a href="#">@Jane Doe</a>
+                        <p>user description</p>
+                    </div>
+                    <div class="trending-user">
+                        <img src="https://via.placeholder.com/24" alt="profile">
+                        <a href="#">@Kitten Doe</a>
+                        <p>user description</p>
+                    </div>
+                    <div class="trending-user">
+                        <img src="https://via.placeholder.com/24" alt="profile">
+                        <a href="#">@Puppy Doe</a>
+                        <p>user description</p>
                     </div>
                 </section>
 
@@ -189,9 +215,12 @@
                     <script>
                         document.getElementById('currentYear').textContent = new Date().getFullYear();
                     </script>
-                <footer>
+                </footer>
+
         </main>
+
     </div>
+
 </body>
 
 </html>
